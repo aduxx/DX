@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RedHeader Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom Font Stacks for Chinese Official Documents */
+      @font-face {
+        font-family: 'FangSong_GB2312';
+        src: local('FangSong_GB2312'), local('FangSong'), local('STFangsong');
+      }
+      @font-face {
+        font-family: 'SimSun';
+        src: local('SimSun'), local('Songti SC'), local('STSong');
+      }
+      @font-face {
+        font-family: 'SimHei';
+        src: local('SimHei'), local('Heiti SC'), local('STHeiti');
+      }
+      @font-face {
+        font-family: 'KaiTi_GB2312';
+        src: local('KaiTi_GB2312'), local('KaiTi'), local('STKaiti');
+      }
+
+      .font-fangsong { font-family: 'FangSong_GB2312', 'FangSong', 'STFangsong', serif; }
+      .font-song { font-family: 'SimSun', 'Songti SC', 'STSong', serif; }
+      .font-hei { font-family: 'SimHei', 'Heiti SC', 'STHeiti', sans-serif; }
+      .font-kai { font-family: 'KaiTi_GB2312', 'KaiTi', 'STKaiti', serif; }
+
+      /* Print specific overrides */
+      @media print {
+        body { -webkit-print-color-adjust: exact; }
+        .no-print { display: none; }
+        .print-area { display: block; width: 100%; height: 100%; margin: 0; padding: 0; }
+        @page { size: A4 portrait; margin: 0; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-100 text-slate-800 antialiased overflow-hidden">
+    <div id="root"></div>
+  </body>
+</html>

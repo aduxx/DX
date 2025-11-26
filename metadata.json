@@ -1,0 +1,5 @@
+{
+  "name": "Copy of RedHeader Architect (红头文件生成器)",
+  "description": "An intelligent Chinese official document (Gongwen) generator compliant with GB/T 9704-2012 standards. It uses Gemini AI to draft content with the correct tone and formatting.",
+  "requestFramePermissions": []
+}
